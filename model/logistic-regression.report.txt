@@ -1,25 +1,25 @@
 === Test set accuracy ===
-78.0%
+80.2%
     
 === Performance evaluation ===
               precision    recall  f1-score   support
 
-           0      0.796     0.755     0.775      1070
-           1      0.766     0.805     0.785      1063
+           0      0.797     0.795     0.796       518
+           1      0.807     0.809     0.808       549
 
-    accuracy                          0.780      2133
-   macro avg      0.781     0.780     0.780      2133
-weighted avg      0.781     0.780     0.780      2133
+    accuracy                          0.802      1067
+   macro avg      0.802     0.802     0.802      1067
+weighted avg      0.802     0.802     0.802      1067
 
 
 === Confusion matrix ===
-True Positives: 856
-True Negatives: 808
-False Positives: 262
-False Negatives: 207
+True Positives: 444
+True Negatives: 412
+False Positives: 106
+False Negatives: 105
 
 === Training result ===
-Best score: 0.7683198499237894
+Best score: 0.7700885878061491
 Best parameters: {'lr__C': 30, 'lr__penalty': 'l2', 'tfidf__norm': 'l2', 'tfidf__use_idf': True, 'vect__analyzer': 'word', 'vect__min_df': 1, 'vect__ngram_range': (1, 2), 'vect__stop_words': None} 
 Best estimator: Pipeline(memory=None,
          steps=[('vect',
@@ -70,7 +70,7 @@ GridSearchCV(cv=4, error_score='raise',
                          'tfidf__norm': ['l1', 'l2'],
                          'tfidf__use_idf': [True, False],
                          'vect__analyzer': ['word',
-                                            <function processing_analyzer at 0x7f5e5535a840>],
+                                            <function processing_analyzer at 0x7fe7736c08c8>],
                          'vect__min_df': [1, 2, 3],
                          'vect__ngram_range': [(1, 2), (1, 3)],
                          'vect__stop_words': ['english', None]},
@@ -78,4 +78,4 @@ GridSearchCV(cv=4, error_score='raise',
              scoring='accuracy', verbose=1)
 
 === Meta ===
-Report generated at (UTC): 2019-08-04 10:19:12.628100
+Report generated at (UTC): 2019-08-04 20:03:06.462253
